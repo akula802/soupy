@@ -97,7 +97,7 @@ if len(results_final) > 0:
         server.login(email_user, email_pwd)
         server.sendmail(FROM, TO, message)
         server.close()
-        print('successfully sent the mail')
+        sys.exit()
         
     except:
         # Mail failed, append info to end of log file
@@ -106,6 +106,7 @@ if len(results_final) > 0:
         log_file.write('Failed to send email' + '\n')
         log_file.write('\n-----------------------------------------------------------------\n')
         log_file.close()
+        sys.exit()
 
 
 else:

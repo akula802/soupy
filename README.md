@@ -7,3 +7,6 @@ finds - if it hasn't, that's something new that you need to know about. Boom, it
 
 Looking for sold-out concert tickets? Jetskis? Free furniture? Set this up to run periodically with Task Scheduler or 
 whatever you like. Let Python do all the work for you!
+
+6/29: This initial commit version does not check to see if 'new' links are reposts, or do much in the way of general
+error handling. It's a rough cut, but it works.
